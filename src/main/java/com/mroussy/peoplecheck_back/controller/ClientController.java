@@ -31,7 +31,7 @@ public class ClientController {
         return clientRepository.findById(id)
                 .map(client -> {
                     client.setFname(newClient.getFname());
-                    client.setLname(newClient.getFname());
+                    client.setLname(newClient.getLname());
                     client.setGender(newClient.getGender());
                     client.setAge(newClient.getAge());
                     client.setPhone(newClient.getPhone());
